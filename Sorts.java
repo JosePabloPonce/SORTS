@@ -40,6 +40,7 @@ public class Sorts {
             	int[] lista= new int[3001];
 
 		File crear = new File ("Numerosaleatorios.txt");
+                
 		FileWriter escribir = null;
 		
 		try {
@@ -59,6 +60,11 @@ public class Sorts {
 			System.exit(0);
 	}
 	}
+        
+        //funcion para guardar en archivo de texto array
+        
+
+        
 	
 	//Funcion para leer archivo de texto y pasarlo a array
 	 public int[] leerarchivoalista(String nombredearchivodetexto) throws IOException 
@@ -81,6 +87,7 @@ public class Sorts {
 	         
 	        return numeros;
 	    }   
+         
 	 //funcion para elegir la cantidad de numeros a ordenar
 	 public int[] elegirnumerosdelarray(int[] lista, int numerosaevaluar) {
 			
@@ -103,7 +110,7 @@ public class Sorts {
 
 
 	//Selection Sort https://stackabuse.com/sorting-algorithms-in-java/#quicksort Algoritmo de referencia
-	public static int[] selectionSort(int[] lista) {
+	public  int[] selectionSort(int[] lista) {
 	    for (int i = 0; i < lista.length; i++) {
 	        int inicial = lista[i];
 	        int minId = i;
@@ -123,7 +130,7 @@ public class Sorts {
 	
 	//MergeSort https://stackoverflow.com/questions/50394397/java-implementing-merge-sort
 	
-	 public static int[] mergeSort(int[] seq) {
+	 public  int[] mergeSort(int[] seq) {
 
 	        if (seq.length < 2) {
 	            return seq;
@@ -143,7 +150,7 @@ public class Sorts {
 	        return merge(a, b);
 	    }
 
-	    public static int[] merge(int[] ls, int[] rs) {
+	    public  int[] merge(int[] ls, int[] rs) {
 	        // Store the result in this array
 	        int[] result = new int[ls.length + rs.length];
 
@@ -210,7 +217,7 @@ public class Sorts {
 		
 		
 		//Radix Sort https://stackabuse.com/sorting-algorithms-in-java/#quicksort Algoritmo de referencia
-	 public static int[] radixsort(int[] v) {
+	 public  int[] radixsort(int[] v) {
 	        int repeticionmaxima    = 1;     // cantidad de repeticiones
 	        int bytesdesplazados = 4;     // numero de bytes a desplazar
 	        int arreglocolas = (int) Math.pow(2,bytesdesplazados) ;
@@ -267,5 +274,7 @@ public class Sorts {
 	
 	
 	
+
+
 
 
