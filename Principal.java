@@ -1,4 +1,3 @@
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -25,19 +24,19 @@ public class Principal {
 	controlador.numeros();
 	
 	
-        //controlador.mergeSort((controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),300)));
-	//controlador.selectionSort(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),20));
-        //controlador.radixsort(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),20));
-        //controlador.bubbleSort(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),20));
-       // controlador.quicksort(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),20),0,(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),20).length)-1);
-	System.out.print(Arrays.toString(controlador.selectionSort(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),20))));
-	System.out.print("\n"+Arrays.toString(controlador.quicksort(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),20),0,(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),20).length)-1)));
-	System.out.print("\n"+Arrays.toString(controlador.bubbleSort(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),20))));
-	System.out.print("\n"+Arrays.toString(controlador.radixsort(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),20))));
-	System.out.print("\n"+Arrays.toString(controlador.mergeSort((controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),20)))));
-
-	//System.out.print(Arrays.toString(controlador.bubbleSort(controlador.leerarchivoalista("Numerosaleatorios.txt"))));
-
+        //Probar los sorts que ordenan
+	System.out.print(Arrays.toString(controlador.selectionSort(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),1875))));
+	System.out.print("\n"+Arrays.toString(controlador.quicksort(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),1875),0,(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),1875).length)-1)));
+	System.out.print("\n"+Arrays.toString(controlador.bubbleSort(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),1875))));
+	System.out.print("\n"+Arrays.toString(controlador.radixsort(controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),1875))));
+	System.out.print("\n"+Arrays.toString(controlador.mergeSort((controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),1875)))));
+        
+        //Probar lista ordenada con sorts 
+       // controlador.radixsort(controlador.mergeSort((controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),1875))));
+        //controlador.mergeSort(controlador.mergeSort((controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),1875))));
+        //controlador.bubbleSort(controlador.mergeSort((controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),1875))));
+        //controlador.selectionSort(controlador.mergeSort((controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),1875))));
+       // controlador.quicksort(controlador.mergeSort((controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),1875))), 0, controlador.mergeSort((controlador.elegirnumerosdelarray(controlador.leerarchivoalista("Numerosaleatorios.txt"),1875))).length-1);
 		
 	}	
 
